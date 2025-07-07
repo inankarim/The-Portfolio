@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/hobbies.css" />
+  <script src="https://kit.fontawesome.com/6218aeb5c7.js" crossorigin="anonymous"></script>
+
+  <style>
+    .card{
+        gap: 5%;
+    }
+    .card h1{
+        color: blueviolet;
+        font-size: 2.3rem;
+    }
+    .card h2{
+        font-size: 2rem;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 12px;
+      border-radius: 8px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .card2 {
+      background-color: #0366d6;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card2:hover {
+      background-color: #024a9c;
+    }
+     .card3 {
+    background-color: #24292e; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+    margin: 10px 5px;
+  }
+
+  .card3 a {
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+  .card3:hover {
+    background-color: #0366d6;
+    transform: translateY(-2px);
+  }
+
+  .card3:active {
+    transform: scale(0.98);
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>My Projects</h1>
+    <h2>Showcasing my programming journey</h2>
+    <div class="custom-btn">
+      <p>
+        <i class="fa-solid fa-arrow-left" style="margin-right: 5px; color: black;"></i>
+        <a style="text-decoration: none;" href="./index.html">Back to home</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="main">
+    <div class="card">
+      <h1>HR Management System</h1>
+      <p>
+        Full-stack e-commerce application built with Django, Python, PostgreSql. Features user authentication, Rookie recruit, and admin dashboard.
+      </p>
+      <div class="button-container">
+        <div class="card2">Django</div>
+        <div class="card2">Python</div>
+        <div class="card2">PostgreSql</div>
+      </div>
+      <div class="card3"><a href="https://github.com/inankarim">Github</a></div>
+    </div>
+
+    <div class="card">
+      <h1>Home of Volunteer Platform</h1>
+      <p>
+        Full-stack e-commerce application built with React, Node.js, and MongoDB. Features user authentication, Event Host, Social Engagement and admin dashboard.
+      </p>
+      <div class="button-container">
+        <div class="card2">React</div>
+        <div class="card2">Node.js</div>
+        <div class="card2">MongoDB</div>
+        <div class="card2">Tailwind CSS</div>
+   
+      </div>
+      <div class="card3"><a href="https://github.com/inankarim/CSE_470_Volunteer_Platfrom">Github</a></div>
+    </div>
+
+    <div class="card">
+      <h1>2D Tetris Game – Python</h1>
+      <p>
+        Built with Python and Pygame, this interactive Tetris game features core mechanics like piece rotation, row clearing, real-time scoring, and smooth keyboard controls.
+      </p>
+      <div class="button-container">
+        <div class="card2">Python</div>
+        <div class="card2">Pygame</div>
+        <div class="card2">OOP</div>
+      </div>
+      <div class="card3"><a href="https://github.com/inankarim/Tetris">Github</a></div>
+    </div>
+
+    <div class="card">
+      <h1>This Portfolio</h1>
+      <p>
+        Built with HTML, CSS, and JavaScript, this portfolio showcases all my academic and personal projects in a clean, responsive design.
+      </p>
+      <div class="button-container">
+        <div class="card2">HTML</div>
+        <div class="card2">CSS</div>
+        <div class="card2">JavaScript</div>
+      </div>
+      <div class="card3"><a href="">Github</a></div>
+    </div>
+  </div>
+</body>
+<footer id="page-footer" style="text-align: center; padding: 20px; font-size: 0.9rem; color: white; background-color: #041beb; border-top: 1px solid #ddd; margin-top: 50px;">
+</footer>
+
+<script>
+  const footer = document.getElementById('page-footer');
+
+ 
+  const lastModified = new Date(document.lastModified);
+  const formattedDate = lastModified.toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+ 
+  const pageUrl = window.location.href;
+
+  footer.innerHTML = `
+    <p>Last updated: ${formattedDate}</p>
+    <p>Page URL: <a href="${pageUrl}" target="_blank" rel="noopener" style="color:#0366d6; text-decoration: none;">${pageUrl}</a></p>
+    <p>© 2024 Alex Johnson. All rights reserved.</p>
+    <p>Built with React, TypeScript, and Tailwind CSS for CSE 391</p>
+  `;
+</script>
+</html>

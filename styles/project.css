@@ -1,0 +1,23 @@
+.button-container {
+display: flex;
+  gap: 20px;
+  background-color: #e0f7ff;   /* Soft sky blue */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card2 {
+  background-color: #0366d6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  max-width: 10%;
+}
+
+.card2:hover {
+  background-color: #024a9c;
+}

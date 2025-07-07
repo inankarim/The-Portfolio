@@ -1,0 +1,81 @@
+header{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    margin: 0px ,10px;
+    padding: 90px;
+}
+header> h1{
+    font-size: 2.5rem;
+    
+}
+header >h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.custom-btn {
+    display: inline-block; 
+    width: auto;           
+    min-width: 100px;       
+    max-width: 200px;       
+    padding: 10px 30px; 
+    background: white; 
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
+}
+
+.custom-btn:hover {
+    background: linear-gradient(to right, #0056b3, #00aaff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.5);
+}
+
+.custom-btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px;
+    gap: 30px;
+}
+.card{
+    padding: 20px 20px;
+    min-width: 75%;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.card h1{
+     color: blueviolet;
+     font-size: 2.3rem;
+}
+.card p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.card h4{
+    font-size: 1.4rem;
+    color: #00aaff;
+}
+ .card-list {
+      list-style-type: disc;
+      font-size: 1.5rem;
+      text-align: left;
+      list-style: circle;
+      margin-left: 20px;
+      padding-left: 0;
+    }
+
+ .card-list li {
+      margin: 5px 0;
+    }

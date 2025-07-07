@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/hobbies.css">
+     <script src="https://kit.fontawesome.com/6218aeb5c7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<header>
+    <h1>My Hobbies and Interests</h1>
+    <h2>Exploring passion beyond programming</h2>
+     <div class="custom-btn">
+    <p><i class="fa-solid fa-arrow-left" style="margin-right: 5px;"></i><a style="text-decoration: none;" href="./index.html">Back to home</a></p>
+</div>
+</header>
+<body>
+    <div class="main">
+        <div class="card">
+            <h1>Gaming</h1>
+            <p>Strategy games and indie titles are my favorite. I enjoy games that challenge problem-solving skills and creativity.</p>
+
+            <h4>Favourite Games</h4>
+            <ul class="card-list">
+                <li>GTA V</li>
+                <li>Fifa 22</li>
+                <li>Need For Speed</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>Reading</h1>
+            <p>Love reading about technology trends, sci-fi novels, and programming books to continuously expand my knowledge.</p>
+            <h4>Current Reading List:</h4>
+            <ul class="card-list">
+                <li>"Clean Code"</li>
+                <li>"Dune"</li>
+                <li>"The Pragmatic Programmer"</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>Tech Tinkering</h1>
+            <p>Building and experimenting with hardware projects, from Raspberry Pi setups to custom PC builds.</p>
+            <h4>Recent Project</h4>
+            <ul class="card-list">
+                <li>Automatic Fresh Fruit Detector</li>
+                <li>Gamification Platfrom: Web Security</li>
+                <li>Iot Weather Station</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h1>FootBall</h1>
+            <p>Active member of the university football team. The sport helps me stay physically active and provides a great break from coding sessions.</p>
+            <h4>Achievement</h4>
+            <ul class="card-list">
+                <li>Regular Training 4x/week</li>
+                <li>CGHS Megalodons Captain</li>
+                <li>Batch 18 team member</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+<footer id="page-footer" style="text-align: center; padding: 20px; font-size: 0.9rem; color: white; background-color: #041beb; border-top: 1px solid #ddd; margin-top: 50px;">
+  <!-- Content will be inserted here by JavaScript -->
+</footer>
+
+<script>
+  const footer = document.getElementById('page-footer');
+
+  // Get last modified date of the document
+  const lastModified = new Date(document.lastModified);
+  const formattedDate = lastModified.toLocaleDateString(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  // Get current page URL
+  const pageUrl = window.location.href;
+
+  footer.innerHTML = `
+    <p>Last updated: ${formattedDate}</p>
+    <p>Page URL: <a href="${pageUrl}" target="_blank" rel="noopener" style="color:#0366d6; text-decoration: none;">${pageUrl}</a></p>
+    <p>© 2024 Alex Johnson. All rights reserved.</p>
+    <p>Built with React, TypeScript, and Tailwind CSS for CSE 391</p>
+  `;
+</script>
+</html>
