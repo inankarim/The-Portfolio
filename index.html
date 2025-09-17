@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="/styles/style.css">
     <script src="https://kit.fontawesome.com/6218aeb5c7.js" crossorigin="anonymous"></script>
     <style>
-  html {
-    scroll-behavior: smooth;
-  }
 </style>
 
 </head>
@@ -214,7 +211,7 @@
       <div class="loc">
         <i class="fa-solid fa-envelope icon"></i>
         <div class="loc1">
-          <h3 style="">Email</h3>
+          <h3>Email</h3>
           <p>inankarimchowdhury@gmail.com</p>
         </div>
       </div>
@@ -236,7 +233,6 @@
       </div>
     </div>
 
-    <!-- Right Contact Form -->
     <div class="info2">
       <h2 class="section-title">Send Message</h2>
       <form class="contact-form">
@@ -250,28 +246,28 @@
 </div>
 
 <footer id="page-footer" style="text-align: center; padding: 20px; font-size: 0.9rem; color: white; background-color: #041beb; border-top: 1px solid #ddd; margin-top: 50px;">
-  <!-- Content will be inserted here by JavaScript -->
+
 </footer>
 
 <script>
   const footer = document.getElementById('page-footer');
 
-  // Get last modified date of the document
+
   const lastModified = new Date(document.lastModified);
+  console.log(lastModified)
   const formattedDate = lastModified.toLocaleDateString(undefined, {
     year: 'numeric',
     month: 'long',
     day: 'numeric'
   });
 
-  // Get current page URL
   const pageUrl = window.location.href;
 
   footer.innerHTML = `
     <p>Last updated: ${formattedDate}</p>
-    <p>Page URL: <a href="${pageUrl}" target="_blank" rel="noopener" style="color:#0366d6; text-decoration: none;">${pageUrl}</a></p>
-    <p>© 2024 Alex Johnson. All rights reserved.</p>
-    <p>Built with React, TypeScript, and Tailwind CSS for CSE 391</p>
+    <p>Page URL: <a href="${pageUrl}"  style="color:#0366d6; text-decoration: none;">${pageUrl}</a></p>
+    <p>© 2024 InanKarimChowdhury. All rights reserved.</p>
+   
   `;
 </script>
 
